@@ -24,7 +24,7 @@ jobs:
         - name: Build
           run: |
             pwd
-            ls /home/runner/work/TestGoogleTest/TestGoogleTest/test/ThirdParty
+            ls /home/runner/work/TestGoogleTest/TestGoogleTest/
             git submodule update --init
             cd test
             cmake -S . -B build
