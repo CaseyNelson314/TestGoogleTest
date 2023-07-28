@@ -23,6 +23,7 @@ jobs:
 
         - name: Build
           run: |
+            ls -la
             git submodule update --init
             cd test
             cmake -S . -B build
