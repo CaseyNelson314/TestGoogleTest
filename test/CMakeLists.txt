@@ -9,7 +9,7 @@ include(GoogleTest)
 enable_testing()
 
 # Add include directory
-include_directories(../src)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../src)
 
 # Add test directory
 add_subdirectory(./UnitTest)
