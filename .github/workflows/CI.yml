@@ -24,7 +24,7 @@ jobs:
         - name: Build
           run: |
             git submodule update --init
-            cd .\test\
+            cd test
             cmake -S . -B build
             cmake --build build
             cd build && ctest
