@@ -23,6 +23,7 @@ jobs:
 
         - name: Build
           run: |
+            pwd
             ls -la
             git submodule update --init
             cd test
