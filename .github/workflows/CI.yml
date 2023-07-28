@@ -14,18 +14,17 @@ jobs:
     build:
         runs-on: ubuntu-latest
         steps:
-
         - uses: actions/checkout@v3
 
-        # - name: Install GoogleTest
-        #   run: |
-        #     git submodule update --init --recursive
+        - name: Clone GoogleTest
+          run: git submodule update --init
 
         - name: Build
+          working-directory: ./test
           run: |
-            git submodule update --init
-            cd test
             cmake -S . -B build
             cmake --build build
-            cd build
-            ctest
+
+        - name: Run tests
+          working-directory: ./test/build
+          run: ctest
