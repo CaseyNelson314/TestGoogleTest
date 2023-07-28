@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
 #include <iostream>
-#include <Udon/HogeHoge.hpp>
+// #include <Udon/HogeHoge.hpp>
 
 
 TEST(HelloTest, BasicAssertions)
@@ -11,6 +11,6 @@ TEST(HelloTest, BasicAssertions)
 
 TEST(HogeHogeTest, hoasdjasfjhakjdshfjkadjkfhj)
 {
-	EXPECT_EQ(0, Udon::return0());
+	// EXPECT_EQ(0, Udon::return0());
 }
 

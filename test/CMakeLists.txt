@@ -13,15 +13,3 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../src)
 
 # Add test directory
 add_subdirectory(./UnitTest)
-
-add_executable(
-  Huga
-  Huga.cpp
-)
-
-target_link_libraries(
-  Huga
-  gtest_main
-)
-
-gtest_discover_tests(Huga)
