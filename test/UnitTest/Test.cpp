@@ -13,3 +13,4 @@ TEST(HogeHogeTest, hoasdjasfjhakjdshfjkadjkfhj)
 {
 	EXPECT_EQ(0, Udon::return0());
 }
+
